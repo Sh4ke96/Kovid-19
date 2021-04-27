@@ -1,0 +1,58 @@
+header {
+  .header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    .header__logo {
+      max-width: 100%;
+      height: auto;
+    }
+    .header__navbutton {
+      color: $main-color;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 9999;
+    }
+  }
+  .header__menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 120%;
+    .header__ul {
+      list-style: none;
+      .header__li {
+        text-align: center;
+        padding: 1rem;
+        .header__link {
+          text-decoration: none;
+          color: $main-color;
+        }
+        .header__link:hover {
+          color: $active;
+        }
+      }
+    }
+  }
+  .header__banner {
+    .header__hero-bg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.show {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  top: 0;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s linear;
+}
