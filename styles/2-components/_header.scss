@@ -8,11 +8,10 @@ header {
       max-width: 100%;
       height: auto;
     }
-    .header__navbutton {
-      color: $main-color;
-      font-size: 1.5rem;
-      cursor: pointer;
-      z-index: 9999;
+    .hamburger {
+      @include tablet-land {
+        display: none;
+      }
     }
   }
   .header__menu {
@@ -20,17 +19,33 @@ header {
     position: absolute;
     top: 0;
     left: 120%;
+    @include tablet-land {
+      display: flex;
+      flex-flow: row nowrap;
+      position: static;
+    }
     .header__ul {
       list-style: none;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      @include tablet-land {
+        flex-flow: row nowrap;
+      }
       .header__li {
         text-align: center;
         padding: 1rem;
+        @include tablet-land {
+          padding: 0 0.7rem;
+        }
         .header__link {
           text-decoration: none;
           color: $main-color;
+          font-weight: bold;
         }
         .header__link:hover {
-          color: $active;
+          color: $blue-active;
         }
       }
     }

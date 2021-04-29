@@ -1,7 +1,29 @@
+@import "mixins";
+
 body {
   background-color: #f7f9fe;
   font-size: 16px;
   padding: 0 2rem;
   font-family: $main-font;
   overflow-x: hidden;
+}
+
+.global__btn {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: $blue;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  @include tablet-land {
+    padding: 0.5rem 1rem;
+    margin-top: 0;
+  }
+}
+
+.global__btn:hover {
+  background-color: $blue-active;
+  cursor: pointer;
 }
