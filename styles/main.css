@@ -7,9 +7,23 @@
 body {
   background-color: #f7f9fe;
   font-size: 16px;
-  padding: 0 2rem;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+}
+
+.blocked {
+  overflow: hidden;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem !important;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .global__btn {
@@ -55,7 +69,7 @@ header .header__navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 header .header__navbar .header__logo {
@@ -71,7 +85,7 @@ header .header__navbar .header__logo {
 
 header .header__menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 120%;
 }
@@ -139,6 +153,136 @@ header .header__menu .header__ul .header__li .header__link:hover {
 header .header__banner .header__hero-bg {
   max-width: 100%;
   height: auto;
+  padding: 0 2rem;
+}
+
+header .header__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem 0 2rem;
+}
+
+header .header__titles .header__h1 .header__title {
+  color: #50658e;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+header .header__titles .header__spans .header__subtitle {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #50658e;
+  font-weight: bold;
+}
+
+header .header__titles .header__spans .red {
+  font-size: 0.8rem;
+  color: #f86168;
+}
+
+header .header__text {
+  padding: 1rem 2rem 0 2rem;
+  color: #50658e;
+  line-height: 1.8rem;
+}
+
+header .header__protect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 2rem 0 2rem;
+}
+
+header .header__protect .header__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0;
+}
+
+header .header__protect .header__btn .header__btn-icon {
+  padding-left: 0.5rem;
+}
+
+header .header__protect .header__protect-link {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #2a81ea;
+  white-space: nowrap;
+  padding-left: 1rem;
+}
+
+header .header__protect .header__protect-link .fa-arrow-right {
+  padding-left: 0.5rem;
+}
+
+header .header__protect .header__protect-link:hover {
+  color: #0b61ca;
+}
+
+header .header__counter {
+  padding: 2rem 2rem 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header__counter .header__counter__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+header .header__counter .header__counter__label .header__label__title {
+  color: #7d92bb;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header .header__counter .header__counter__label .header__label__numbers {
+  color: #465675;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+
+header .header__counter .padding-top {
+  padding-top: 1rem;
+}
+
+header .header__counter__updated {
+  padding-top: 1rem;
+  color: #7d92bb;
+  font-size: 0.77rem;
+  white-space: nowrap;
 }
 
 .show {

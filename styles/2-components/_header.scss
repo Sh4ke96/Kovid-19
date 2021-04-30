@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem;
     .header__logo {
       max-width: 100%;
       height: auto;
@@ -16,7 +16,7 @@ header {
   }
   .header__menu {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 120%;
     @include tablet-land {
@@ -54,7 +54,98 @@ header {
     .header__hero-bg {
       max-width: 100%;
       height: auto;
+      padding: 0 2rem;
     }
+  }
+  .header__titles {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem 0 2rem;
+    .header__h1 {
+      .header__title {
+        color: $main-color;
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+    }
+    .header__spans {
+      .header__subtitle {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: $main-color;
+        font-weight: bold;
+      }
+      .red {
+        font-size: 0.8rem;
+        color: $red-light;
+      }
+    }
+  }
+  .header__text {
+    padding: 1rem 2rem 0 2rem;
+    color: $main-color;
+    line-height: 1.8rem;
+  }
+  .header__protect {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem 0 2rem;
+    .header__btn {
+      display: flex;
+      justify-content: center;
+      font-size: 0.8rem;
+      align-items: center;
+      white-space: nowrap;
+      padding: 0.8rem 1.2rem;
+      margin-top: 0;
+      .header__btn-icon {
+        padding-left: 0.5rem;
+      }
+    }
+    .header__protect-link {
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: $blue;
+      white-space: nowrap;
+      padding-left: 1rem;
+      .fa-arrow-right {
+        padding-left: 0.5rem;
+      }
+    }
+    .header__protect-link:hover {
+      color: $blue-active;
+    }
+  }
+  .header__counter {
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .header__counter__label {
+      display: flex;
+      flex-flow: column nowrap;
+      .header__label__title {
+        color: $blue-light;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      .header__label__numbers {
+        color: $blue-dark;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 0.5rem;
+      }
+    }
+    .padding-top {
+      padding-top: 1rem;
+    }
+  }
+  .header__counter__updated {
+    padding-top: 1rem;
+    color: $blue-light;
+    font-size: 0.77rem;
+    white-space: nowrap;
   }
 }
 

@@ -3,9 +3,21 @@
 body {
   background-color: #f7f9fe;
   font-size: 16px;
-  padding: 0 2rem;
   font-family: $main-font;
   overflow-x: hidden;
+}
+
+.blocked {
+  overflow: hidden;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem !important;
+  background-color: #fff;
+  transition: all 0.3s;
 }
 
 .global__btn {
