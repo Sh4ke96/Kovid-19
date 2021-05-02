@@ -264,6 +264,10 @@ header .header__left-container .header__titles {
   }
 }
 
+header .header__left-container .header__titles .header__h1 {
+  line-height: 170%;
+}
+
 header .header__left-container .header__titles .header__h1 .header__title {
   color: #50658e;
   font-size: 3rem;
@@ -278,8 +282,12 @@ header .header__left-container .header__titles .header__h1 .header__title {
 
 @media (min-width: 1800px) {
   header .header__left-container .header__titles .header__h1 .header__title {
-    font-size: 4.3rem;
+    font-size: 5rem;
   }
+}
+
+header .header__left-container .header__titles .header__spans {
+  line-height: 170%;
 }
 
 @media (min-width: 600px) {
@@ -314,7 +322,7 @@ header .header__left-container .header__titles .header__spans .header__subtitle 
 }
 
 header .header__left-container .header__titles .header__spans .red {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #f86168;
 }
 

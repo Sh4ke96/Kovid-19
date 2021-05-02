@@ -103,6 +103,7 @@ header {
         padding: 1rem 0;
       }
       .header__h1 {
+        line-height: 170%;
         .header__title {
           color: $main-color;
           font-size: 3rem;
@@ -111,11 +112,12 @@ header {
             font-size: 4rem;
           }
           @include big-desktop {
-            font-size: 4.3rem;
+            font-size: 5rem;
           }
         }
       }
       .header__spans {
+        line-height: 170%;
         @include tablet {
           display: flex;
           flex-flow: column nowrap;
@@ -133,7 +135,7 @@ header {
           }
         }
         .red {
-          font-size: 0.8rem;
+          font-size: 1rem;
           color: $red-light;
         }
       }
