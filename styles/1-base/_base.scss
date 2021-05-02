@@ -4,6 +4,9 @@ body {
   background-color: #f7f9fe;
   font-size: 16px;
   font-family: $main-font;
+  @include big-desktop {
+    padding: 0 15rem;
+  }
 }
 
 .blocked {
