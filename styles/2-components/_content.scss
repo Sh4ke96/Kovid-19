@@ -1,7 +1,6 @@
 .section__about {
-  padding: 1rem 2rem;
-  height: 200vh;
-  background-color: #fff;
+  background-color: #ffffff;
+  padding: 3rem 2rem;
   .section__about__text {
     .about__subtitle {
       color: $blue;
@@ -22,6 +21,36 @@
       color: $blue-dark;
       .about__bold {
         font-weight: bold;
+      }
+    }
+  }
+  .section__about__table {
+    background-color: #fff;
+    margin-top: 2rem;
+    border: 1px solid #e7e8ff;
+    border-radius: 4px;
+    box-shadow: 0px 5px 40px 0px rgba(80, 101, 142, 0.08);
+    .table__h1 {
+      color: $main-color;
+      padding: 1rem 0;
+      border-bottom: 1px solid #e7e8ff;
+      padding: 1rem;
+    }
+    .table__ul {
+      list-style: none;
+      .table__item {
+        padding: 1rem;
+        border-bottom: 1px solid #e7e8ff;
+        .table__link {
+          display: flex;
+          justify-content: space-between;
+          text-decoration: none;
+          align-items: center;
+          color: $blue;
+        }
+        .table__arrow {
+          color: $blue;
+        }
       }
     }
   }

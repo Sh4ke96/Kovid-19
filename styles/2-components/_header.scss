@@ -1,4 +1,7 @@
 header {
+  @include desktop {
+    height: 100vh;
+  }
   .header__navbar {
     position: fixed;
     top: 0;
@@ -59,14 +62,14 @@ header {
     }
   }
   .header__hero {
-    padding: 8rem 0 1rem 0;
+    padding: 8rem 0 2rem 0;
     @include tablet-land {
       display: flex;
       flex-flow: row-reverse;
       justify-content: space-between;
     }
     @include big-desktop {
-      padding-top: 8rem;
+      padding-top: 15rem;
     }
     .header__banner {
       @include tablet {
@@ -93,7 +96,6 @@ header {
     @include tablet-land {
       display: flex;
       flex-flow: column nowrap;
-      justify-content: space-between;
     }
     .header__titles {
       display: flex;
@@ -103,8 +105,8 @@ header {
         padding: 1rem 0;
       }
       .header__h1 {
-        line-height: 170%;
         .header__title {
+          font-family: $accent-font;
           color: $main-color;
           font-size: 3rem;
           text-transform: uppercase;
@@ -117,12 +119,11 @@ header {
         }
       }
       .header__spans {
-        line-height: 170%;
-        @include tablet {
-          display: flex;
-          flex-flow: column nowrap;
-        }
+        line-height: 110%;
+        display: flex;
+        flex-flow: column nowrap;
         .header__subtitle {
+          font-family: $accent-font;
           text-transform: uppercase;
           font-size: 1.4rem;
           color: $main-color;
@@ -136,6 +137,7 @@ header {
         }
         .red {
           font-size: 1rem;
+          padding-bottom: 0.2rem;
           color: $red-light;
         }
       }
@@ -193,17 +195,20 @@ header {
     .header__counter {
       padding: 2rem 2rem 0 2rem;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
-      @include desktop {
-        flex-flow: column nowrap;
-      }
+      flex-wrap: wrap;
       @include big-desktop {
         padding: 1rem 0;
+        margin-top: 10rem;
       }
       .header__counter__label {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         flex-flow: column nowrap;
+        @include big-desktop {
+          padding-right: 5rem;
+        }
         .header__label__title {
           color: $blue-light;
           font-size: 0.9rem;
@@ -242,7 +247,7 @@ header {
         font-size: 1rem;
       }
       @include big-desktop {
-        padding: 1rem 0;
+        padding: 0;
       }
     }
   }
