@@ -1,3 +1,28 @@
-.about {
+.section__about {
+  padding: 1rem 2rem;
   height: 200vh;
+  background-color: #fff;
+  .section__about__text {
+    .about__subtitle {
+      color: $blue;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+    }
+    .about__title {
+      font-family: $accent-font;
+      color: $main-color;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      line-height: 3rem;
+    }
+    .about__p {
+      padding-top: 1.3rem;
+      color: $blue-dark;
+      .about__bold {
+        font-weight: bold;
+      }
+    }
+  }
 }

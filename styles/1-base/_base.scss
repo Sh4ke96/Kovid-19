@@ -1,5 +1,10 @@
 @import "mixins";
 
+html {
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f7f9fe;
   font-size: 16px;
