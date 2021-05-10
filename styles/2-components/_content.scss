@@ -193,6 +193,7 @@
       flex-flow: column nowrap;
       align-items: center;
       text-align: center;
+      color: $blue-dark;
       .stayhome__icon {
         color: $blue;
         font-size: 3rem;
@@ -216,6 +217,128 @@
         padding: 0.8rem 1.2rem;
         margin-top: 0;
       }
+    }
+  }
+}
+
+.section__protect {
+  padding: 3rem 2rem;
+  .protect__texts {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .protect__subtitle {
+      color: $blue;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+    }
+    .protect__title {
+      font-family: $accent-font;
+      color: $main-color;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      line-height: 3rem;
+      text-align: center;
+    }
+    .protect__p {
+      padding-top: 1rem;
+      text-align: center;
+      color: $blue-dark;
+      .protect__p-bold {
+        font-weight: bold;
+      }
+    }
+  }
+  .protect__card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 3rem;
+    .card__img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+      border-radius: 50%;
+      width: 8rem;
+    }
+    .card__title {
+      color: $blue-dark;
+      padding-top: 1rem;
+    }
+    .card__p {
+      padding-top: 0.5rem;
+      color: $blue-dark;
+      text-align: center;
+    }
+  }
+  .protect__links {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .protect__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      .protect__btn {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+        align-items: center;
+        white-space: nowrap;
+        padding: 0.8rem 1.2rem;
+        margin-top: 0;
+      }
+    }
+    .protect__qa-link {
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: $blue;
+      white-space: nowrap;
+      padding-top: 1rem;
+      @include tablet {
+        font-size: 1.2rem;
+      }
+      .fa-arrow-right {
+        padding-left: 0.5rem;
+      }
+    }
+    .protect__qa-link:hover {
+      color: $blue-active;
+    }
+  }
+  .protect__label {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 3rem;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+    .label__title {
+      color: $blue-dark;
+    }
+    .protect__ul {
+      margin-top: 1rem;
+      padding-left: 1.3rem;
+      .protect__li {
+        padding-top: 1rem;
+        color: $blue-dark;
+        .protect__li-span {
+          font-weight: bold;
+        }
+        .protect__li-link {
+          color: $blue;
+        }
+      }
+      .protect__li::marker {
+        color: $blue;
+        font-size: 1.5rem;
+      }
+    }
+    .protect__img-steps {
+      padding-top: 2rem;
     }
   }
 }

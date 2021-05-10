@@ -361,6 +361,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  color: #465675;
 }
 
 .section__symptoms .symptoms__stayhome .stayhome__text .stayhome__icon {
@@ -400,6 +401,194 @@ body {
   white-space: nowrap;
   padding: 0.8rem 1.2rem;
   margin-top: 0;
+}
+
+.section__protect {
+  padding: 3rem 2rem;
+}
+
+.section__protect .protect__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__protect .protect__texts .protect__subtitle {
+  color: #2a81ea;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.section__protect .protect__texts .protect__title {
+  font-family: "Oswald", sans-serif;
+  color: #50658e;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.section__protect .protect__texts .protect__p {
+  padding-top: 1rem;
+  text-align: center;
+  color: #465675;
+}
+
+.section__protect .protect__texts .protect__p .protect__p-bold {
+  font-weight: bold;
+}
+
+.section__protect .protect__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.section__protect .protect__card .card__img {
+  max-width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+          box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+  border-radius: 50%;
+  width: 8rem;
+}
+
+.section__protect .protect__card .card__title {
+  color: #465675;
+  padding-top: 1rem;
+}
+
+.section__protect .protect__card .card__p {
+  padding-top: 0.5rem;
+  color: #465675;
+  text-align: center;
+}
+
+.section__protect .protect__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__protect .protect__links .protect__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.section__protect .protect__links .protect__link .protect__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0;
+}
+
+.section__protect .protect__links .protect__qa-link {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #2a81ea;
+  white-space: nowrap;
+  padding-top: 1rem;
+}
+
+@media (min-width: 600px) {
+  .section__protect .protect__links .protect__qa-link {
+    font-size: 1.2rem;
+  }
+}
+
+.section__protect .protect__links .protect__qa-link .fa-arrow-right {
+  padding-left: 0.5rem;
+}
+
+.section__protect .protect__links .protect__qa-link:hover {
+  color: #0b61ca;
+}
+
+.section__protect .protect__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-top: 3rem;
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  -webkit-box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+          box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+}
+
+.section__protect .protect__label .label__title {
+  color: #465675;
+}
+
+.section__protect .protect__label .protect__ul {
+  margin-top: 1rem;
+  padding-left: 1.3rem;
+}
+
+.section__protect .protect__label .protect__ul .protect__li {
+  padding-top: 1rem;
+  color: #465675;
+}
+
+.section__protect .protect__label .protect__ul .protect__li .protect__li-span {
+  font-weight: bold;
+}
+
+.section__protect .protect__label .protect__ul .protect__li .protect__li-link {
+  color: #2a81ea;
+}
+
+.section__protect .protect__label .protect__ul .protect__li::marker {
+  color: #2a81ea;
+  font-size: 1.5rem;
+}
+
+.section__protect .protect__label .protect__img-steps {
+  padding-top: 2rem;
 }
 
 @media (min-width: 1200px) {
@@ -717,7 +906,7 @@ header .header__left-container .header__protect .header__btn .header__btn-icon {
   padding-left: 0.5rem;
 }
 
-header .header__left-container .header__protect .header__protect-link {
+header .header__left-container .header__protect .header__about-link {
   font-size: 0.8rem;
   text-decoration: none;
   color: #2a81ea;
@@ -726,12 +915,12 @@ header .header__left-container .header__protect .header__protect-link {
 }
 
 @media (min-width: 600px) {
-  header .header__left-container .header__protect .header__protect-link {
+  header .header__left-container .header__protect .header__about-link {
     font-size: 1.2rem;
   }
 }
 
-header .header__left-container .header__protect .header__protect-link .fa-arrow-right {
+header .header__left-container .header__protect .header__about-link .fa-arrow-right {
   padding-left: 0.5rem;
 }
 
