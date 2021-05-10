@@ -298,6 +298,8 @@
       color: $blue;
       white-space: nowrap;
       padding-top: 1rem;
+      display: flex;
+      align-items: center;
       @include tablet {
         font-size: 1.2rem;
       }
@@ -339,6 +341,58 @@
     }
     .protect__img-steps {
       padding-top: 2rem;
+    }
+  }
+  .protect__hands {
+    padding-top: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .hands__title {
+      color: $blue-dark;
+    }
+    .hands__link {
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: $blue;
+      white-space: nowrap;
+      padding-top: 1rem;
+      display: flex;
+      align-items: center;
+      @include tablet {
+        font-size: 1.2rem;
+      }
+      .fa-arrow-right {
+        padding-left: 0.5rem;
+      }
+    }
+    .hands__link:hover {
+      color: $blue-active;
+    }
+    .hands__container {
+      padding-top: 2rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      .hands__card {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        .hands__img {
+          max-width: 100%;
+          height: auto;
+          box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+          border-radius: 50%;
+          width: 6rem;
+        }
+        .hands__img-title {
+          padding-top: 1rem;
+          color: $blue-dark;
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
