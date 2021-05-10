@@ -396,3 +396,61 @@
     }
   }
 }
+
+.section__treatment {
+  background-image: url("/img/shape.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-color: #2766bb;
+  text-align: left;
+  padding: 3rem 2rem;
+  .treatment__texts {
+    display: flex;
+    flex-flow: column nowrap;
+    .treatment__subtitle {
+      color: #73e3ff;
+      text-transform: uppercase;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .treatment__title {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 2.25rem;
+      font-family: $accent-font;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+  }
+  .treatment__p {
+    padding-top: 1.5rem;
+    color: #ced4ff;
+    .treatment__span {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .treatment__card {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #1b47a1;
+    margin-top: 2rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    color: #fff;
+    .treatment__card-title {
+      font-weight: bold;
+      padding-top: 1rem;
+    }
+    .treatment__card-text {
+      padding-top: 0.5rem;
+    }
+    .treatment__ul {
+      margin-top: 0.3rem;
+      padding-left: 1.3rem;
+      .treatment__li {
+        padding-top: 0.5rem;
+      }
+    }
+  }
+}

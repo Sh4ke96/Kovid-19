@@ -7,7 +7,6 @@ const navbar = document.querySelector(".header__navbar");
 const cases = document.querySelector("#cases");
 const deaths = document.querySelector("#deaths");
 const recovered = document.querySelector("#recovered");
-// const menu_link = document.querySelector(".header__link");
 
 hamburger_btn.addEventListener('click', function () {
   menu_list.classList.toggle('show');
