@@ -454,3 +454,106 @@
     }
   }
 }
+
+.section__dont {
+  padding: 3rem 2rem;
+  .dont__texts {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .dont__subtitle {
+      color: $blue;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+    }
+    .dont__title {
+      font-family: $accent-font;
+      color: $main-color;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      line-height: 3rem;
+      text-align: center;
+    }
+    .dont__p {
+      padding-top: 1rem;
+      text-align: center;
+      color: $blue-dark;
+    }
+    .dont__heroimg {
+      max-width: 100%;
+      height: auto;
+      padding-top: 2rem;
+    }
+  }
+  .do_dont__container {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding-top: 2rem;
+    .box__container {
+      .box__wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-top: 3rem;
+        .box__img {
+          border: 2px solid $blue;
+          border-radius: 50%;
+          width: 6rem;
+        }
+        .box__title {
+          color: $blue;
+          padding-top: 0.5rem;
+          font-size: 1rem;
+        }
+        .box__icon {
+          position: absolute;
+          top: 2.4rem;
+          color: #fff;
+          padding: 0.8rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+        .box__red {
+          background: #f86168;
+        }
+        .box__green {
+          background: #3dca93;
+        }
+      }
+    }
+  }
+}
+
+.section__faq {
+  padding: 3rem 2rem;
+  background-color: #fff;
+  .faq__texts {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    .faq__subtitle {
+      color: $blue;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.1rem;
+      font-weight: bold;
+    }
+    .faq__title {
+      font-family: $accent-font;
+      color: $main-color;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      line-height: 3rem;
+      text-align: center;
+    }
+  }
+}
