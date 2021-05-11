@@ -918,6 +918,99 @@ body {
   text-align: center;
 }
 
+.section__faq .faq__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-top: 3rem;
+}
+
+.section__faq .faq__label .faq__ul {
+  list-style: none;
+}
+
+.section__faq .faq__label .faq__ul .faq__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.7rem;
+  border: 2px solid #e7e8ff;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: #465675;
+  font-size: 0.9rem;
+}
+
+.section__faq .faq__label .faq__ul .faq__li .faq__icon {
+  font-size: 0.8rem;
+}
+
+.section__faq .faq__label .faq__ul .faq__li:hover {
+  border: 2px solid #2a81ea;
+  cursor: pointer;
+  color: #2a81ea;
+}
+
+.section__faq .faq__answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin-top: 2rem;
+}
+
+.section__faq .faq__answers .answers__ul {
+  list-style: none;
+  border: 2px solid #e7e8ff;
+}
+
+.section__faq .faq__answers .answers__ul .answers__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  border-radius: 4px;
+  padding: 1.5rem;
+  color: #465675;
+  font-size: 0.9rem;
+  background: #f7fafe;
+  font-weight: bold;
+}
+
+.section__faq .faq__answers .answers__ul .answers__li .answers__icon {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+}
+
+.section__faq .faq__answers .answers__ul .answers__li:hover {
+  cursor: pointer;
+  color: #2a81ea;
+}
+
+.section__faq .faq__answers .answers__ul .answers__li:not(:last-child) {
+  border-bottom: 1px solid #e7e8ff;
+}
+
 @media (min-width: 1200px) {
   header {
     height: 100vh;

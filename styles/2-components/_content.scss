@@ -556,4 +556,64 @@
       text-align: center;
     }
   }
+  .faq__label {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 3rem;
+    .faq__ul {
+      list-style: none;
+      .faq__li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.7rem;
+        border: 2px solid #e7e8ff;
+        border-radius: 4px;
+        padding: 1rem 1.5rem;
+        color: $blue-dark;
+        font-size: 0.9rem;
+        .faq__icon {
+          font-size: 0.8rem;
+        }
+      }
+      .faq__li:hover {
+        border: 2px solid $blue;
+        cursor: pointer;
+        color: $blue;
+      }
+    }
+  }
+  .faq__answers {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 2rem;
+    .answers__ul {
+      list-style: none;
+      border: 2px solid #e7e8ff;
+      .answers__li {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        border-radius: 4px;
+        padding: 1.5rem;
+        color: $blue-dark;
+        font-size: 0.9rem;
+        background: #f7fafe;
+        font-weight: bold;
+        .answers__icon {
+          position: absolute;
+          top: 0.7rem;
+          right: 0.7rem;
+        }
+      }
+      .answers__li:hover {
+        cursor: pointer;
+        color: $blue;
+      }
+      .answers__li:not(:last-child) {
+        border-bottom: 1px solid #e7e8ff;
+      }
+    }
+  }
 }
