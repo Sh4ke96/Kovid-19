@@ -15,13 +15,13 @@ hamburger_btn.addEventListener('click', function () {
 })
 
 document.querySelectorAll('.header__link')
-      .forEach(header__link => header__link.addEventListener('click', function () {
-            menu_list.classList.remove('show');
-            hamburger_btn.classList.toggle('is-active');
-            body.classList.remove('blocked');
-      }));
+.forEach(header__link => header__link.addEventListener('click', function () {
+  menu_list.classList.remove('show');
+  hamburger_btn.classList.toggle('is-active');
+  body.classList.remove('blocked');
+}));
 
-window.addEventListener("scroll", function (){
+window.addEventListener("scroll", function () {
   navbar.classList.toggle("sticky", window.scrollY > 0);
 })
 
@@ -33,3 +33,10 @@ window.onload = function() {
   deathsUp.start();
   recoveredUp.start();
 }
+
+const hidden_faq = document.querySelector(".answers__hidden");
+const hidden_icon = document.querySelector(".answers__icon");
+
+hidden_icon.addEventListener("click", function () {
+  hidden_faq.classList.toggle(".visible");
+});
