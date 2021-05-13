@@ -1,5 +1,3 @@
-import { CountUp } from '../node_modules/countup.js/dist/countUp.js';
-
 const hamburger_btn = document.querySelector(".hamburger");
 const menu_list = document.querySelector(".header__menu");
 const body = document.querySelector("body");
@@ -26,9 +24,9 @@ window.addEventListener("scroll", function () {
 })
 
 window.onload = function() {
-  const casesUp = new CountUp(cases, 152899453);
-  const deathsUp = new CountUp(deaths, 3217969);
-  const recoveredUp = new CountUp(recovered, 131613458);
+  const casesUp = new countUp.CountUp(cases, 152899453);
+  const deathsUp = new countUp.CountUp(deaths, 3217969);
+  const recoveredUp = new countUp.CountUp(recovered, 131613458);
   casesUp.start();
   deathsUp.start();
   recoveredUp.start();
