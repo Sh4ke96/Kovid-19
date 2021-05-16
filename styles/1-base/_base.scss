@@ -32,8 +32,8 @@ body {
   }
 }
 
-.visible {
-  display: block;
+.active:after {
+  content: "\2212" !important;
 }
 
 .global__btn {

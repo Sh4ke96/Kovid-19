@@ -601,21 +601,26 @@
         font-size: 0.9rem;
         background: #f7fafe;
         font-weight: bold;
-        .answers__icon {
-          position: absolute;
-          top: 0.7rem;
-          right: 0.7rem;
-        }
+      }
+      .answers__li:after {
+        content: "\002B";
+        position: absolute;
+        top: 0.2rem;
+        right: 0.7rem;
+        color: $blue-dark;
+        font-size: 1.3rem;
       }
       .answers__li:hover {
-        cursor: pointer;
         color: $blue;
+        cursor: pointer;
       }
       .answers__li:not(:last-child) {
         border-bottom: 1px solid #e7e8ff;
       }
       .answers__hidden {
-        // display: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
         .hidden__text {
           padding: 0.8rem 1rem 0.8rem 1.5rem;
           color: $blue-dark;

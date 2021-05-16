@@ -32,9 +32,17 @@ window.onload = function() {
   recoveredUp.start();
 }
 
-const hidden_faq = document.querySelector(".answers__hidden");
-const hidden_icon = document.querySelector(".answers__icon");
+const answers_li = document.getElementsByClassName("answers__li");
+let i;
 
-hidden_icon.addEventListener("click", function () {
-  hidden_faq.classList.toggle(".visible");
-});
+for (i = 0; i < answers_li.length; i++) {
+  answers_li[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let answers_hidden = this.nextElementSibling;
+    if (answers_hidden.style.maxHeight) {
+      answers_hidden.style.maxHeight = null;
+    } else {
+      answers_hidden.style.maxHeight = answers_hidden.scrollHeight + "px";
+    } 
+  });
+}
