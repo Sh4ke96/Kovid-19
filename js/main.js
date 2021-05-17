@@ -23,6 +23,10 @@ window.addEventListener("scroll", function () {
   navbar.classList.toggle("sticky", window.scrollY > 0);
 })
 
+window.addEventListener("load", function () {
+  navbar.classList.toggle("sticky", window.scrollY > 0);
+})
+
 window.onload = function() {
   const casesUp = new countUp.CountUp(cases, 152899453);
   const deathsUp = new countUp.CountUp(deaths, 3217969);
@@ -33,9 +37,8 @@ window.onload = function() {
 }
 
 const answers_li = document.getElementsByClassName("answers__li");
-let i;
 
-for (i = 0; i < answers_li.length; i++) {
+for (let i = 0; i < answers_li.length; i++) {
   answers_li[i].addEventListener("click", function() {
     this.classList.toggle("active");
     let answers_hidden = this.nextElementSibling;
