@@ -8,6 +8,9 @@
       text-transform: uppercase;
       letter-spacing: 0.1rem;
       font-weight: bold;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
     .about__title {
       font-family: $accent-font;
@@ -15,10 +18,16 @@
       font-size: 2.5rem;
       text-transform: uppercase;
       line-height: 3rem;
+      @include tablet {
+        font-size: 3rem;
+      }
     }
     .about__p {
       padding-top: 1.3rem;
       color: $blue-dark;
+      @include tablet {
+        font-size: 1.1rem;
+      }
       .about__bold {
         font-weight: bold;
       }
@@ -68,6 +77,9 @@
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
       font-weight: bold;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
     .spread__title {
       font-family: $accent-font;
@@ -76,16 +88,25 @@
       text-transform: uppercase;
       line-height: 3rem;
       text-align: center;
+      @include tablet {
+        font-size: 3rem;
+      }
     }
   }
   .spread__p {
     padding-top: 1rem;
     text-align: center;
     color: $blue-dark;
+    @include tablet {
+      font-size: 1.1rem;
+    }
   }
   .spread__container {
     display: flex;
     flex-flow: column nowrap;
+    @include tablet {
+      padding: 0 4rem;
+    }
     .spread__card {
       display: flex;
       flex-flow: column nowrap;
@@ -122,6 +143,9 @@
       white-space: nowrap;
       padding: 0.8rem 1.2rem;
       margin-top: 0;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -139,6 +163,9 @@
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
       font-weight: bold;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
     .symptoms__title {
       font-family: $accent-font;
@@ -147,15 +174,24 @@
       text-transform: uppercase;
       line-height: 3rem;
       text-align: center;
+      @include tablet {
+        font-size: 3rem;
+      }
     }
     .symptoms__p {
       padding-top: 1rem;
       text-align: center;
       color: $blue-dark;
       margin-bottom: 4rem;
+      @include tablet {
+        font-size: 1.1rem;
+      }
     }
   }
   .symptoms__container {
+    @include tablet {
+      padding: 0 4rem;
+    }
     .symptoms__card {
       display: flex;
       position: relative;
@@ -183,6 +219,9 @@
         top: -1.875rem;
         width: 3.5rem;
         border-radius: 50%;
+        @include tablet {
+          width: 4.2rem;
+        }
       }
     }
   }
@@ -194,9 +233,15 @@
       align-items: center;
       text-align: center;
       color: $blue-dark;
+      @include tablet {
+        font-size: 1.1rem;
+      }
       .stayhome__icon {
         color: $blue;
         font-size: 3rem;
+        @include tablet {
+          font-size: 3.5rem;
+        }
       }
       .stayhome__span {
         color: $blue;
@@ -216,6 +261,9 @@
         white-space: nowrap;
         padding: 0.8rem 1.2rem;
         margin-top: 0;
+        @include tablet {
+          font-size: 1.2rem;
+        }
       }
     }
   }
@@ -233,6 +281,9 @@
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
       font-weight: bold;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
     .protect__title {
       font-family: $accent-font;
@@ -241,47 +292,72 @@
       text-transform: uppercase;
       line-height: 3rem;
       text-align: center;
+      @include tablet {
+        font-size: 3rem;
+      }
     }
     .protect__p {
       padding-top: 1rem;
       text-align: center;
       color: $blue-dark;
+      @include tablet {
+        font-size: 1.1rem;
+      }
       .protect__p-bold {
         font-weight: bold;
       }
     }
   }
-  .protect__card {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin-top: 3rem;
-    .card__img {
-      max-width: 100%;
-      height: auto;
-      box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
-      border-radius: 50%;
-      width: 8rem;
+  .protect__container {
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem 3rem;
     }
-    .card__title {
-      color: $blue-dark;
-      padding-top: 1rem;
-    }
-    .card__p {
-      padding-top: 0.5rem;
-      color: $blue-dark;
-      text-align: center;
+    .protect__card {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin-top: 3rem;
+      .card__img {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+        border-radius: 50%;
+        width: 8rem;
+      }
+      .card__title {
+        color: $blue-dark;
+        padding-top: 1rem;
+        @include tablet {
+          text-align: center;
+        }
+      }
+      .card__p {
+        padding-top: 0.5rem;
+        color: $blue-dark;
+        text-align: center;
+      }
     }
   }
   .protect__links {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    @include tablet {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding-top: 2rem;
+    }
     .protect__link {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 3rem;
+      @include tablet {
+        margin-top: 0rem;
+      }
       .protect__btn {
         display: flex;
         justify-content: center;
@@ -290,6 +366,9 @@
         white-space: nowrap;
         padding: 0.8rem 1.2rem;
         margin-top: 0;
+        @include tablet {
+          font-size: 1.1rem;
+        }
       }
     }
     .protect__qa-link {
@@ -302,6 +381,7 @@
       align-items: center;
       @include tablet {
         font-size: 1.2rem;
+        padding-top: 0rem;
       }
       .fa-arrow-right {
         padding-left: 0.5rem;
@@ -341,6 +421,9 @@
     }
     .protect__img-steps {
       padding-top: 2rem;
+      @include tablet {
+        padding: 2rem 4rem;
+      }
     }
   }
   .protect__hands {
@@ -350,6 +433,9 @@
     align-items: center;
     .hands__title {
       color: $blue-dark;
+      @include tablet {
+        font-size: 2rem;
+      }
     }
     .hands__link {
       font-size: 0.8rem;
@@ -386,6 +472,9 @@
           box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
           border-radius: 50%;
           width: 6rem;
+          @include tablet {
+            width: 7rem;
+          }
         }
         .hands__img-title {
           padding-top: 1rem;
@@ -426,6 +515,9 @@
   .treatment__p {
     padding-top: 1.5rem;
     color: #ced4ff;
+    @include tablet {
+      font-size: 1.1rem;
+    }
     .treatment__span {
       color: #fff;
       font-weight: bold;
@@ -467,6 +559,9 @@
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
       font-weight: bold;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
     .dont__title {
       font-family: $accent-font;
@@ -475,11 +570,17 @@
       text-transform: uppercase;
       line-height: 3rem;
       text-align: center;
+      @include tablet {
+        font-size: 3rem;
+      }
     }
     .dont__p {
       padding-top: 1rem;
       text-align: center;
       color: $blue-dark;
+      @include tablet {
+        font-size: 1.1rem;
+      }
     }
     .dont__heroimg {
       max-width: 100%;
@@ -492,22 +593,35 @@
     justify-content: space-between;
     align-self: center;
     padding-top: 2rem;
+    @include tablet {
+      justify-content: center;
+      padding-top: 0;
+    }
     .box__container {
-      .box__wrapper {
+      @include tablet {
+        margin: 1.5rem;
+      }
+      .box__wrapper-left {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         position: relative;
         padding-top: 3rem;
+        @include tablet {
+          padding-top: 2rem;
+          flex-flow: row-reverse;
+        }
         .box__img {
           border: 2px solid $blue;
           border-radius: 50%;
           width: 6rem;
+          @include tablet {
+            width: 7rem;
+          }
         }
         .box__title {
           color: $blue;
-          padding-top: 0.5rem;
           font-size: 1rem;
         }
         .box__icon {
@@ -521,6 +635,59 @@
           justify-content: center;
           height: 1.5rem;
           width: 1.5rem;
+          @include tablet {
+            top: 1.4rem;
+            right: 2.8rem;
+          }
+        }
+        .box__red {
+          background: #f86168;
+        }
+        .box__green {
+          background: #3dca93;
+        }
+      }
+      .box__wrapper-right {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-top: 3rem;
+        @include tablet {
+          padding-top: 2rem;
+          flex-flow: row nowrap;
+        }
+        .box__img {
+          border: 2px solid $blue;
+          border-radius: 50%;
+          width: 6rem;
+          @include tablet {
+            width: 7rem;
+          }
+        }
+        .box__title {
+          color: $blue;
+          font-size: 1rem;
+          @include tablet {
+            text-align: right;
+          }
+        }
+        .box__icon {
+          position: absolute;
+          top: 2.4rem;
+          color: #fff;
+          padding: 0.8rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 1.5rem;
+          width: 1.5rem;
+          @include tablet {
+            top: 1.4rem;
+            left: 2.8rem;
+          }
         }
         .box__red {
           background: #f86168;
@@ -546,6 +713,9 @@
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
       font-weight: bold;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
     .faq__title {
       font-family: $accent-font;
@@ -554,6 +724,9 @@
       text-transform: uppercase;
       line-height: 3rem;
       text-align: center;
+      @include tablet {
+        font-size: 3rem;
+      }
     }
   }
   .faq__answers {
@@ -574,6 +747,9 @@
         font-size: 0.9rem;
         background: #f7fafe;
         font-weight: bold;
+        @include tablet {
+          font-size: 1rem;
+        }
       }
       .answers__li::after {
         content: "\002B";
@@ -617,6 +793,9 @@
       font-size: 0.8rem;
       letter-spacing: 0.1rem;
       font-weight: bold;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
     .news__title {
       font-family: $accent-font;
@@ -625,6 +804,9 @@
       text-transform: uppercase;
       line-height: 3rem;
       text-align: center;
+      @include tablet {
+        font-size: 3rem;
+      }
     }
   }
   .news__card {
@@ -637,6 +819,9 @@
     padding: 1rem;
     box-shadow: 0px 5px 40px 0px rgba(80, 101, 142, 0.08);
     border-radius: 5px;
+    @include tablet {
+      margin: 2rem 2rem 0 2rem;
+    }
     .news__img {
       max-width: 100%;
       height: auto;
@@ -646,12 +831,18 @@
       padding-top: 1rem;
       font-size: 1rem;
       color: $blue-dark;
+      @include tablet {
+        font-size: 1.2rem;
+      }
     }
     .news__card-text {
       color: $blue-dark;
       text-align: center;
       padding-top: 0.5rem;
       font-size: 0.9rem;
+      @include tablet {
+        font-size: 1rem;
+      }
     }
   }
 }

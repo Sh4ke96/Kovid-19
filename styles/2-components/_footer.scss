@@ -33,6 +33,10 @@ footer {
   }
   .footer__container-middle {
     padding: 0rem 2rem;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
     .footer__wrapper-link {
       display: flex;
       flex-flow: column nowrap;
