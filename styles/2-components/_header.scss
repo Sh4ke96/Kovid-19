@@ -11,28 +11,24 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    @include big-desktop {
-      padding: 2rem 15rem;
-      transition: all 0.4s;
+    .hamburger {
+      @include desktop {
+        display: none;
+      }
     }
     .header__logo {
       max-width: 100%;
       height: auto;
-    }
-    .hamburger {
-      @include tablet-land {
-        display: none;
-      }
     }
     .header__menu {
       display: none;
       position: fixed;
       top: 0;
       left: 120%;
-      @include tablet-land {
+      @include desktop {
         display: flex;
-        flex-flow: row nowrap;
         position: static;
+        left: 0;
       }
       .header__ul {
         list-style: none;
@@ -40,15 +36,12 @@ header {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        @include tablet-land {
+        @include desktop {
           flex-flow: row nowrap;
         }
         .header__li {
           text-align: center;
           padding: 1rem;
-          @include tablet-land {
-            padding: 0 0.7rem;
-          }
           .header__link {
             text-decoration: none;
             color: $main-color;
@@ -63,16 +56,12 @@ header {
   }
   .header__hero {
     padding: 8rem 0 2rem 0;
-    @include tablet-land {
+    @include desktop {
       display: flex;
-      flex-flow: row-reverse;
-      justify-content: space-between;
-    }
-    @include big-desktop {
-      padding-top: 15rem;
+      flex-flow: row-reverse nowrap;
     }
     .header__banner {
-      @include tablet {
+      @include tablet-land {
         display: flex;
         justify-content: center;
       }
@@ -80,14 +69,8 @@ header {
         max-width: 100%;
         height: auto;
         padding: 0 2rem;
-        @include tablet {
-          width: 70%;
-        }
-        @include big-desktop {
-          padding: 0;
-        }
         @include tablet-land {
-          width: fit-content;
+          max-width: 500px;
         }
       }
     }

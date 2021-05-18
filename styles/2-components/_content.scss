@@ -1,7 +1,14 @@
 .section__about {
   background-color: #ffffff;
   padding: 3rem 2rem;
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
   .section__about__text {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 55%;
     .about__subtitle {
       color: $blue;
       font-size: 0.8rem;
@@ -39,6 +46,12 @@
     border: 1px solid #e7e8ff;
     border-radius: 4px;
     box-shadow: 0px 5px 40px 0px rgba(80, 101, 142, 0.08);
+    @include desktop {
+      margin-top: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      flex-basis: 40%;
+    }
     .table__h1 {
       color: $main-color;
       padding: 1rem 0;
@@ -56,6 +69,9 @@
           text-decoration: none;
           align-items: center;
           color: $blue;
+          @include tablet-land {
+            font-size: 1.2rem;
+          }
         }
         .table__arrow {
           color: $blue;
@@ -107,6 +123,14 @@
     @include tablet {
       padding: 0 4rem;
     }
+    @include tablet-land {
+      padding: 0 8rem;
+    }
+    @include desktop {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 0;
+    }
     .spread__card {
       display: flex;
       flex-flow: column nowrap;
@@ -114,6 +138,9 @@
       box-shadow: 0px 5px 40px 0px rgba(80, 101, 142, 0.08);
       border-radius: 4px;
       margin-top: 1.5rem;
+      @include desktop {
+        margin: 1.5rem 1rem 0rem 1rem;
+      }
       .card__img {
         max-width: 100%;
         height: auto;
@@ -192,21 +219,38 @@
     @include tablet {
       padding: 0 4rem;
     }
+    @include tablet-land {
+      padding: 0 8rem;
+    }
+    @include desktop {
+      padding: 0;
+      display: flex;
+      margin-top: 1rem;
+    }
     .symptoms__card {
       display: flex;
       position: relative;
       flex-flow: column nowrap;
       margin-bottom: 4rem;
-      padding: 1rem;
+      padding: 2rem 1rem;
       background-color: #fff;
       box-shadow: 0px 5px 40px 0px rgba(70, 86, 117, 0.08);
       .symp__card__title {
         font-size: 1rem;
         color: $blue;
+        @include tablet-land {
+          font-size: 1.2rem;
+        }
+        @include desktop {
+          font-size: 1.1rem;
+        }
       }
       .symp__card__text {
         color: $blue-dark;
         padding-top: 0.5rem;
+        @include tablet-land {
+          font-size: 1rem;
+        }
         .symp__card__span {
           font-weight: bolder;
         }
@@ -221,6 +265,9 @@
         border-radius: 50%;
         @include tablet {
           width: 4.2rem;
+        }
+        @include tablet-land {
+          width: 4.5rem;
         }
       }
     }
@@ -315,6 +362,10 @@
       grid-template-rows: 1fr 1fr;
       gap: 1rem 3rem;
     }
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
     .protect__card {
       display: flex;
       flex-flow: column nowrap;
@@ -350,6 +401,13 @@
       justify-content: space-between;
       padding-top: 2rem;
     }
+    @include tablet-land {
+      justify-content: space-around;
+    }
+    @include desktop {
+      padding-top: 4rem;
+    }
+
     .protect__link {
       display: flex;
       justify-content: center;
@@ -398,15 +456,31 @@
     background-color: #fff;
     padding: 1.5rem 1rem;
     box-shadow: 0px 4px 35px 0px rgba(70, 86, 117, 0.15);
+    @include desktop {
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
     .label__title {
       color: $blue-dark;
+      @include tablet-land {
+        font-size: 1.5rem;
+      }
     }
     .protect__ul {
       margin-top: 1rem;
       padding-left: 1.3rem;
+      @include desktop {
+        margin-top: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        flex-basis: 50%;
+      }
       .protect__li {
         padding-top: 1rem;
         color: $blue-dark;
+        @include tablet-land {
+          font-size: 1.1rem;
+        }
         .protect__li-span {
           font-weight: bold;
         }
@@ -423,6 +497,13 @@
       padding-top: 2rem;
       @include tablet {
         padding: 2rem 4rem;
+      }
+      @include tablet-land {
+        padding: 2rem 8rem;
+      }
+      @include desktop {
+        padding: 0;
+        max-width: 45%;
       }
     }
   }
@@ -475,6 +556,12 @@
           @include tablet {
             width: 7rem;
           }
+          @include tablet-land {
+            width: 8rem;
+          }
+          @include desktop {
+            width: 7rem;
+          }
         }
         .hands__img-title {
           padding-top: 1rem;
@@ -494,9 +581,15 @@
   background-color: #2766bb;
   text-align: left;
   padding: 3rem 2rem;
+  @include desktop {
+    display: flex;
+  }
   .treatment__texts {
     display: flex;
     flex-flow: column nowrap;
+    @include desktop {
+      justify-content: center;
+    }
     .treatment__subtitle {
       color: #73e3ff;
       text-transform: uppercase;
@@ -530,9 +623,15 @@
     margin-top: 2rem;
     padding: 1rem 1.5rem 2rem 1.5rem;
     color: #fff;
+    @include desktop {
+      margin-top: 0;
+    }
     .treatment__card-title {
       font-weight: bold;
       padding-top: 1rem;
+      @include tablet-land {
+        font-size: 1.5rem;
+      }
     }
     .treatment__card-text {
       padding-top: 0.5rem;
@@ -586,6 +685,13 @@
       max-width: 100%;
       height: auto;
       padding-top: 2rem;
+      @include tablet-land {
+        padding: 2rem 8rem;
+      }
+      @include desktop {
+        padding: 2rem 0;
+        max-width: 40%;
+      }
     }
   }
   .do_dont__container {
@@ -597,9 +703,15 @@
       justify-content: center;
       padding-top: 0;
     }
+    @include desktop {
+      justify-content: space-around;
+    }
     .box__container {
       @include tablet {
         margin: 1.5rem;
+      }
+      @include desktop {
+        margin: 0;
       }
       .box__wrapper-left {
         display: flex;
@@ -623,6 +735,9 @@
         .box__title {
           color: $blue;
           font-size: 1rem;
+          @include tablet-land {
+            margin: 0 2rem;
+          }
         }
         .box__icon {
           position: absolute;
@@ -671,6 +786,9 @@
           font-size: 1rem;
           @include tablet {
             text-align: right;
+          }
+          @include tablet-land {
+            margin: 0 2rem;
           }
         }
         .box__icon {
@@ -809,39 +927,50 @@
       }
     }
   }
-  .news__card {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    background-color: #fff;
-    padding: 1rem;
-    box-shadow: 0px 5px 40px 0px rgba(80, 101, 142, 0.08);
-    border-radius: 5px;
-    @include tablet {
-      margin: 2rem 2rem 0 2rem;
+  .news__container {
+    @include desktop {
+      display: flex;
     }
-    .news__img {
-      max-width: 100%;
-      height: auto;
+    .news__card {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0px 5px 40px 0px rgba(80, 101, 142, 0.08);
       border-radius: 5px;
-    }
-    .news__card-title {
-      padding-top: 1rem;
-      font-size: 1rem;
-      color: $blue-dark;
       @include tablet {
-        font-size: 1.2rem;
+        margin: 2rem 2rem 0 2rem;
       }
-    }
-    .news__card-text {
-      color: $blue-dark;
-      text-align: center;
-      padding-top: 0.5rem;
-      font-size: 0.9rem;
-      @include tablet {
+      @include tablet-land {
+        margin: 2rem 4rem 0 4rem;
+      }
+      @include desktop {
+        margin: 2rem 1rem 0 1rem;
+      }
+      .news__img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .news__card-title {
+        padding-top: 1rem;
         font-size: 1rem;
+        color: $blue-dark;
+        @include tablet {
+          font-size: 1.2rem;
+        }
+      }
+      .news__card-text {
+        color: $blue-dark;
+        text-align: center;
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+        @include tablet {
+          font-size: 1rem;
+        }
       }
     }
   }
