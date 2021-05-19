@@ -1,6 +1,5 @@
 header {
   background-image: url(/img/shape.png);
-  padding-bottom: 8rem;
   @include big-desktop {
     padding: 0rem 15rem 8rem 15rem;
   }

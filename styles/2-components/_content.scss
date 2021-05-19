@@ -772,100 +772,107 @@
   }
   .do_dont__container {
     display: flex;
+    flex-flow: column nowrap;
     justify-content: space-between;
     align-self: center;
     padding-top: 2rem;
     @include tablet {
-      justify-content: center;
       padding-top: 0;
     }
-    @include desktop {
-      justify-content: space-around;
-    }
     @include big-desktop {
-      padding-top: 4rem;
+      flex-flow: row nowrap;
       justify-content: center;
     }
     .dont__heroimg {
       max-width: 100%;
       height: auto;
       padding-top: 2rem;
+      @include tablet {
+        padding: 2rem 4rem;
+      }
       @include tablet-land {
         padding: 2rem 8rem;
       }
       @include desktop {
-        padding: 2rem 0;
-        max-width: 40%;
+        padding: 2rem 8rem;
       }
       @include big-desktop {
-        max-width: 30%;
+        padding: 2rem 2rem;
+        max-width: 50%;
         order: 2;
       }
     }
     .box__container {
       @include tablet {
-        margin: 1.5rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
       }
       @include desktop {
         margin: 0;
+        justify-content: space-around;
       }
       @include big-desktop {
-        padding-right: 5rem;
+        flex-flow: column nowrap;
       }
       .box__wrapper-left {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        position: relative;
         padding-top: 3rem;
         @include tablet {
           padding-top: 2rem;
-          flex-flow: row nowrap;
-          @include big-desktop {
-            justify-content: space-between;
-          }
         }
-        .box__img {
-          border: 2px solid $blue;
-          border-radius: 50%;
-          width: 6rem;
-          @include tablet {
-            width: 7rem;
-          }
+        @include big-desktop {
+          flex-flow: row nowrap;
         }
         .box__title {
           color: $blue;
           font-size: 1rem;
+          margin-bottom: 1.5rem;
+          @include tablet {
+            text-align: left;
+          }
           @include tablet-land {
-            margin: 0 2rem;
+            margin-bottom: 2rem;
           }
           @include big-desktop {
-            margin: 0;
-            padding: 1rem;
+            margin: 0 1rem 0 0;
           }
         }
-        .box__icon {
-          position: absolute;
-          top: 2.4rem;
-          color: #fff;
-          padding: 0.8rem;
+        .box__gfx {
+          position: relative;
+          .box__img {
+            border: 2px solid $blue;
+            border-radius: 50%;
+            width: 7rem;
+          }
+        }
+        .box__gfx::after {
+          content: "\2716";
           border-radius: 50%;
+          height: 2rem;
+          width: 2rem;
+          font-size: 1.2rem;
+          color: #fff;
+          position: absolute;
+          background: #f86168;
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 1.5rem;
-          width: 1.5rem;
-          @include tablet {
-            top: 1.4rem;
-            right: 2.8rem;
+          top: -1rem;
+          left: 2.5rem;
+        }
+        .box__gfx::before {
+          @include big-desktop {
+            position: absolute;
+            top: 50%;
+            left: 115%;
+            width: 125px;
+            content: "";
+            border-bottom: 2px dashed #7fb3f2;
           }
-        }
-        .box__red {
-          background: #f86168;
-        }
-        .box__green {
-          background: #3dca93;
         }
       }
       .box__wrapper-right {
@@ -873,61 +880,66 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        position: relative;
         padding-top: 3rem;
         @include tablet {
           padding-top: 2rem;
-          flex-flow: row nowrap;
         }
         @include big-desktop {
+          flex-flow: row-reverse nowrap;
           justify-content: space-between;
-        }
-        .box__img {
-          border: 2px solid $blue;
-          border-radius: 50%;
-          width: 6rem;
-          @include tablet {
-            width: 7rem;
-          }
         }
         .box__title {
           color: $blue;
           font-size: 1rem;
+          margin-bottom: 1.5rem;
           @include tablet {
             text-align: right;
           }
           @include tablet-land {
-            margin: 0 2rem;
+            margin-bottom: 2rem;
+          }
+          @include big-desktop {
+            margin: 0 0 0 1rem;
           }
         }
-        .box__icon {
-          position: absolute;
-          top: 2.4rem;
-          color: #fff;
-          padding: 0.8rem;
+        .box__gfx {
+          position: relative;
+          .box__img {
+            border: 2px solid $blue;
+            border-radius: 50%;
+            width: 7rem;
+          }
+        }
+        .box__gfx::after {
+          content: "\2714";
           border-radius: 50%;
+          height: 2rem;
+          width: 2rem;
+          font-size: 1.2rem;
+          color: #fff;
+          position: absolute;
+          background: #3dca93;
           display: flex;
           align-items: center;
           justify-content: center;
-          height: 1.5rem;
-          width: 1.5rem;
-          @include tablet {
-            top: 1.4rem;
-            left: 2.8rem;
+          top: -1rem;
+          right: 2.5rem;
+        }
+        .box__gfx::before {
+          @include big-desktop {
+            position: absolute;
+            top: 50%;
+            right: 115%;
+            width: 125px;
+            content: "";
+            border-bottom: 2px dashed #7fb3f2;
           }
-        }
-        .box__red {
-          background: #f86168;
-        }
-        .box__green {
-          background: #3dca93;
         }
       }
     }
     .box__container:nth-of-type(2) {
       @include big-desktop {
         order: 3;
-        padding-left: 5rem;
       }
     }
   }
