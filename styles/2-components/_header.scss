@@ -1,6 +1,8 @@
 header {
-  @include desktop {
-    height: 100vh;
+  background-image: url(/img/shape.png);
+  padding-bottom: 8rem;
+  @include big-desktop {
+    padding: 0rem 15rem 8rem 15rem;
   }
   .header__navbar {
     position: fixed;
@@ -11,6 +13,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    @include big-desktop {
+      padding: 2rem 15rem;
+    }
     .hamburger {
       @include desktop {
         display: none;
@@ -60,6 +65,10 @@ header {
       display: flex;
       flex-flow: row-reverse nowrap;
     }
+    @include big-desktop {
+      margin-top: 8rem;
+      justify-content: space-between;
+    }
     .header__banner {
       @include tablet-land {
         display: flex;
@@ -72,6 +81,9 @@ header {
         @include tablet-land {
           max-width: 500px;
         }
+        @include big-desktop {
+          max-width: 700px;
+        }
       }
     }
   }
@@ -79,6 +91,10 @@ header {
     @include tablet-land {
       display: flex;
       flex-flow: column nowrap;
+    }
+    @include big-desktop {
+      flex-basis: 50%;
+      justify-content: space-between;
     }
     .header__titles {
       display: flex;
@@ -97,7 +113,7 @@ header {
             font-size: 4rem;
           }
           @include big-desktop {
-            font-size: 5rem;
+            font-size: 6rem;
           }
         }
       }
@@ -114,6 +130,9 @@ header {
           @include tablet {
             font-size: 2.3rem;
           }
+          @include big-desktop {
+            font-size: 3.3rem;
+          }
         }
         .red {
           font-size: 1rem;
@@ -121,6 +140,9 @@ header {
           color: $red-light;
           @include tablet {
             font-size: 1.3rem;
+          }
+          @include big-desktop {
+            font-size: 2.3rem;
           }
         }
       }
@@ -134,6 +156,7 @@ header {
       }
       @include big-desktop {
         padding: 1rem 0;
+        font-size: 1.3rem;
       }
     }
     .header__protect {
@@ -182,7 +205,6 @@ header {
       flex-wrap: wrap;
       @include big-desktop {
         padding: 1rem 0;
-        margin-top: 10rem;
       }
       .header__counter__label {
         display: flex;

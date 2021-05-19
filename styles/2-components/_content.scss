@@ -1,9 +1,10 @@
 .section__about {
   background-color: #ffffff;
   padding: 3rem 2rem;
-  @include desktop {
+  @include big-desktop {
     display: flex;
     justify-content: space-between;
+    padding: 3rem 15rem;
   }
   .section__about__text {
     display: flex;
@@ -35,9 +36,15 @@
       @include tablet {
         font-size: 1.1rem;
       }
+      @include big-desktop {
+        font-size: 1.3rem;
+      }
       .about__bold {
         font-weight: bold;
       }
+    }
+    .about__p:first-of-type {
+      font-size: 1.4rem;
     }
   }
   .section__about__table {
@@ -83,6 +90,9 @@
 
 .section__spread {
   padding: 3rem 2rem;
+  @include big-desktop {
+    padding: 3rem 15rem;
+  }
   .spread__titles {
     display: flex;
     flex-flow: column nowrap;
@@ -116,6 +126,9 @@
     @include tablet {
       font-size: 1.1rem;
     }
+    @include big-desktop {
+      font-size: 1.2rem;
+    }
   }
   .spread__container {
     display: flex;
@@ -130,6 +143,9 @@
       display: flex;
       flex-flow: row nowrap;
       padding: 0;
+    }
+    @include big-desktop {
+      margin-top: 3rem;
     }
     .spread__card {
       display: flex;
@@ -150,10 +166,16 @@
         padding: 1rem;
         color: $blue;
         font-size: 1.2rem;
+        @include big-desktop {
+          font-size: 1.3rem;
+        }
       }
       .card__p {
         color: $blue-dark;
         padding: 0 1rem 2rem 1rem;
+        @include big-desktop {
+          font-size: 1.2rem;
+        }
       }
     }
   }
@@ -180,6 +202,9 @@
 .section__symptoms {
   padding: 3rem 2rem;
   background-color: #fff;
+  @include big-desktop {
+    padding: 3rem 15rem;
+  }
   .symptoms__texts {
     display: flex;
     flex-flow: column nowrap;
@@ -227,6 +252,9 @@
       display: flex;
       margin-top: 1rem;
     }
+    @include big-desktop {
+      margin-top: 3rem;
+    }
     .symptoms__card {
       display: flex;
       position: relative;
@@ -244,12 +272,18 @@
         @include desktop {
           font-size: 1.1rem;
         }
+        @include big-desktop {
+          font-size: 1.3rem;
+        }
       }
       .symp__card__text {
         color: $blue-dark;
         padding-top: 0.5rem;
         @include tablet-land {
           font-size: 1rem;
+        }
+        @include big-desktop {
+          font-size: 1.2rem;
         }
         .symp__card__span {
           font-weight: bolder;
@@ -282,6 +316,10 @@
       color: $blue-dark;
       @include tablet {
         font-size: 1.1rem;
+      }
+      @include big-desktop {
+        margin-top: 0;
+        padding: 0 15rem;
       }
       .stayhome__icon {
         color: $blue;
@@ -318,6 +356,9 @@
 
 .section__protect {
   padding: 3rem 2rem;
+  @include big-desktop {
+    padding: 3rem 15rem;
+  }
   .protect__texts {
     display: flex;
     flex-flow: column nowrap;
@@ -366,6 +407,9 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;
     }
+    @include big-desktop {
+      margin-top: 3rem;
+    }
     .protect__card {
       display: flex;
       flex-flow: column nowrap;
@@ -407,7 +451,9 @@
     @include desktop {
       padding-top: 4rem;
     }
-
+    @include big-desktop {
+      justify-content: center;
+    }
     .protect__link {
       display: flex;
       justify-content: center;
@@ -415,6 +461,9 @@
       margin-top: 3rem;
       @include tablet {
         margin-top: 0rem;
+      }
+      @include big-desktop {
+        padding-right: 1rem;
       }
       .protect__btn {
         display: flex;
@@ -441,6 +490,9 @@
         font-size: 1.2rem;
         padding-top: 0rem;
       }
+      @include big-desktop {
+        padding-left: 1rem;
+      }
       .fa-arrow-right {
         padding-left: 0.5rem;
       }
@@ -460,6 +512,9 @@
       flex-flow: row nowrap;
       justify-content: space-between;
     }
+    @include big-desktop {
+      margin-top: 6rem;
+    }
     .label__title {
       color: $blue-dark;
       @include tablet-land {
@@ -474,6 +529,10 @@
         display: flex;
         flex-flow: column nowrap;
         flex-basis: 50%;
+      }
+      @include big-desktop {
+        justify-content: space-evenly;
+        flex-basis: 70%;
       }
       .protect__li {
         padding-top: 1rem;
@@ -505,6 +564,9 @@
         padding: 0;
         max-width: 45%;
       }
+      @include big-desktop {
+        max-width: 25%;
+      }
     }
   }
   .protect__hands {
@@ -512,6 +574,9 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    @include big-desktop {
+      margin: 3rem 0;
+    }
     .hands__title {
       color: $blue-dark;
       @include tablet {
@@ -541,12 +606,17 @@
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      @include big-desktop {
+      }
       .hands__card {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
         padding: 1rem;
+        @include big-desktop {
+          padding: 1rem 2rem;
+        }
         .hands__img {
           max-width: 100%;
           height: auto;
@@ -562,11 +632,17 @@
           @include desktop {
             width: 7rem;
           }
+          @include big-desktop {
+            width: 9rem;
+          }
         }
         .hands__img-title {
           padding-top: 1rem;
           color: $blue-dark;
           font-size: 1rem;
+          @include big-desktop {
+            font-size: 1.2rem;
+          }
         }
       }
     }
@@ -584,11 +660,17 @@
   @include desktop {
     display: flex;
   }
+  @include big-desktop {
+    padding: 8rem 15rem;
+  }
   .treatment__texts {
     display: flex;
     flex-flow: column nowrap;
     @include desktop {
       justify-content: center;
+    }
+    @include big-desktop {
+      margin-right: 3rem;
     }
     .treatment__subtitle {
       color: #73e3ff;
@@ -648,6 +730,9 @@
 
 .section__dont {
   padding: 3rem 2rem;
+  @include big-desktop {
+    padding: 3rem 15rem;
+  }
   .dont__texts {
     display: flex;
     flex-flow: column nowrap;
@@ -680,17 +765,8 @@
       @include tablet {
         font-size: 1.1rem;
       }
-    }
-    .dont__heroimg {
-      max-width: 100%;
-      height: auto;
-      padding-top: 2rem;
-      @include tablet-land {
-        padding: 2rem 8rem;
-      }
-      @include desktop {
-        padding: 2rem 0;
-        max-width: 40%;
+      @include big-desktop {
+        padding: 1rem 20rem;
       }
     }
   }
@@ -706,12 +782,35 @@
     @include desktop {
       justify-content: space-around;
     }
+    @include big-desktop {
+      padding-top: 4rem;
+      justify-content: center;
+    }
+    .dont__heroimg {
+      max-width: 100%;
+      height: auto;
+      padding-top: 2rem;
+      @include tablet-land {
+        padding: 2rem 8rem;
+      }
+      @include desktop {
+        padding: 2rem 0;
+        max-width: 40%;
+      }
+      @include big-desktop {
+        max-width: 30%;
+        order: 2;
+      }
+    }
     .box__container {
       @include tablet {
         margin: 1.5rem;
       }
       @include desktop {
         margin: 0;
+      }
+      @include big-desktop {
+        padding-right: 5rem;
       }
       .box__wrapper-left {
         display: flex;
@@ -722,7 +821,10 @@
         padding-top: 3rem;
         @include tablet {
           padding-top: 2rem;
-          flex-flow: row-reverse;
+          flex-flow: row nowrap;
+          @include big-desktop {
+            justify-content: space-between;
+          }
         }
         .box__img {
           border: 2px solid $blue;
@@ -737,6 +839,10 @@
           font-size: 1rem;
           @include tablet-land {
             margin: 0 2rem;
+          }
+          @include big-desktop {
+            margin: 0;
+            padding: 1rem;
           }
         }
         .box__icon {
@@ -772,6 +878,9 @@
         @include tablet {
           padding-top: 2rem;
           flex-flow: row nowrap;
+        }
+        @include big-desktop {
+          justify-content: space-between;
         }
         .box__img {
           border: 2px solid $blue;
@@ -815,6 +924,12 @@
         }
       }
     }
+    .box__container:nth-of-type(2) {
+      @include big-desktop {
+        order: 3;
+        padding-left: 5rem;
+      }
+    }
   }
 }
 
@@ -851,6 +966,9 @@
     display: flex;
     flex-flow: column nowrap;
     margin-top: 1rem;
+    @include big-desktop {
+      padding: 2rem 25rem;
+    }
     .answers__ul {
       list-style: none;
       border: 2px solid #e7e8ff;
@@ -868,6 +986,9 @@
         @include tablet {
           font-size: 1rem;
         }
+        @include big-desktop {
+          font-size: 1.2rem;
+        }
       }
       .answers__li::after {
         content: "\002B";
@@ -876,6 +997,9 @@
         right: 0.7rem;
         color: $blue-dark;
         font-size: 1.3rem;
+        @include big-desktop {
+          font-size: 1.5rem;
+        }
       }
       .answers__li:hover::after,
       .answers__li:hover {
@@ -893,6 +1017,9 @@
           padding: 0.8rem 1rem 0.8rem 1.5rem;
           color: $blue-dark;
           line-height: 1.5;
+          @include big-desktop {
+            font-size: 1.2rem;
+          }
         }
       }
     }
@@ -901,6 +1028,9 @@
 
 .section__news {
   padding: 3rem 2rem;
+  @include big-desktop {
+    padding: 3rem 15rem;
+  }
   .news__texts {
     display: flex;
     flex-flow: column nowrap;

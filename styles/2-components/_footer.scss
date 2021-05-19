@@ -1,6 +1,10 @@
 footer {
   background-color: #151c2e;
   padding-bottom: 1rem;
+  background-image: url(/img/shape.png);
+  @include big-desktop {
+    padding: 3rem 15rem;
+  }
   .footer__container-uper {
     padding: 3rem 2rem 1rem 2rem;
     .footer__logo {
