@@ -270,3 +270,8 @@ header {
   height: 100%;
   transition: 0.2s linear;
 }
+
+.active-navbar {
+  color: $blue-active !important;
+  border-bottom: 2px solid $blue-active;
+}

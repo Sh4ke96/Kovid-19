@@ -2587,6 +2587,11 @@ header .header__left-container .header__counter__updated {
   transition: 0.2s linear;
 }
 
+.active-navbar {
+  color: #0b61ca !important;
+  border-bottom: 2px solid #0b61ca;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
