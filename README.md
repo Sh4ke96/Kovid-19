@@ -4,7 +4,7 @@ Kovid-19 website is a collection of key information on the virus. I used few lib
 
 ## Live on Github Pages:
 
-[https://sh4ke96.github.io/kovid-19/](https://sh4ke96.github.io/kovid-19/)
+[https://sh4ke96.github.io/kovid-19/](https://sh4ke96.github.io/Kovid-19/)
 
 ## Built With
 
